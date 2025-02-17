@@ -23,18 +23,22 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          { icon: <FaHtml5 />, key: "html5" },
+          { icon: <FaCss3 />, key: "css3" },
+          { icon: <FaJs />, key: "js" },
+          { icon: <FaReact />, key: "react" },
+          { icon: <SiNextdotjs />, key: "nextjs" },
+          { icon: <SiFramer />, key: "framer" },
+          { icon: <FaWordpress />, key: "wordpress" },
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          { icon: <FaFigma />, key: "figma" },
+          { icon: <SiAdobexd />, key: "adobexd" },
+          { icon: <SiAdobephotoshop />, key: "photoshop" },
+        ],
       },
     ],
   },
@@ -127,7 +131,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
+            10 years ago, I began freelancing as a developer. Since then, I&apos;ve
             done remote work for agencies, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
